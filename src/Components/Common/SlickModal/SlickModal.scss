@@ -1,0 +1,12 @@
+#container #slick-modal {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  opacity: 1;
+  transform: none;
+  transition: .2s,.3s cubic-bezier(.3,1.5,.7,1) transform;
+}
+
+#slick-modal {
+  transform: scale(.9);
+}

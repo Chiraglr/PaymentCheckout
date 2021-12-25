@@ -1,0 +1,106 @@
+.header {
+    border-bottom: 1px solid #d6d6d6;
+    // box-shadow: 0 0px 7px 1px grey;
+    background-color: white;
+}
+.routeContainer {
+    padding-top: 69px;
+}
+.partnerDetails {
+    overflow-y: scroll;
+    height: calc(100vh - 69px);
+}
+.discussion:hover {
+    text-decoration: underline;
+}
+.overlay {
+    background-color: rgba(0,0,0,0.4);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1500;
+    position: fixed;
+}
+.side-bar {
+    background-color: #f1f1f1;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 230px;
+    z-index: 120;
+}
+.sidebar[aria-hidden="true"] {
+    transition: 2000ms;
+    transform: translateX(100%);
+}
+/* SIDEBAR VISIBLE STATE */
+.sidebar:not([aria-hidden]),
+.sidebar[aria-hidden="false"] {
+    transition: 2000ms;
+    transform: translateX(0);
+}
+@media only screen and (max-width: 575px){
+    .title {
+        font-size: 30px;
+    }
+}
+
+.active {
+    width: 10px;
+    height: 10px;
+    background-color: #16A085;
+}
+
+.inactive {
+    width: 10px;
+    height: 10px;
+    background-color: #CF2121;
+}
+
+.idle {
+    width: 10px;
+    height: 10px;
+    background-color: #F0B859;
+}
+.sideBar {
+    overflow-y: scroll;
+    height: calc(100vh - 69px);
+}
+.partnerSearch {
+    position: sticky;
+    top: 0px;
+    z-index: 70;
+}
+.call {
+    line-height: 12px;
+}
+.custom-div-icon {
+    width: 40px !important;
+    height: 45px !important;
+}
+.custom-div-icon:after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px 5px 5px 5px;
+    border-style: solid;
+    height: 10px;
+    border-color: #f8be32 transparent transparent transparent;
+}
+.mapDot {
+    height: 4px;
+    width: 4px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-left: 18px;
+}
+
+@media only screen and (max-width: 575px) {
+    .call {
+        position: relative;
+        bottom: -31px;
+    }
+}

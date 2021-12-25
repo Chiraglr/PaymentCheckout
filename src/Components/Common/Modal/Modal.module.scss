@@ -1,0 +1,6 @@
+.modal {
+  // transform: none;
+  transition: .2s,.3s cubic-bezier(.3,1.5,.7,1) transform;
+  // transition: .3s ease-in;
+  transform: scale(.9);
+}
